@@ -1,17 +1,18 @@
-import logo from './logo.svg';
 import './App.scss';
+import Layout from './Components/Layout/layout'
 
 // Components 
-import Header from './Components/test/header';
 
 // Bootstrap
 import { Button } from 'react-bootstrap';
 
-function App() {
+const App = () => {
   return (
-    <div className="App container-sm">
-      <Header/>
-      <Button variant="primary">Submit</Button>
+    <div className="App">
+      <Layout>
+
+        
+      </Layout>
     </div>
   );
 }
