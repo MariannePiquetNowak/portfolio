@@ -1,0 +1,13 @@
+.Header {
+    background: no-repeat center/100% url("../../images/frame-header.svg");
+    position: relative;
+    top: -15em;
+    height: 100% !important;
+    width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+    .Header {
+        background: none;
+    }
+}

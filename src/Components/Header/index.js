@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../Navbar';
 import GithubSection from "../Github";
 
-
+import './header.scss';
 
 
 const Header = () => {
