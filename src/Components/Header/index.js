@@ -1,12 +1,16 @@
 import React from 'react';
 import Navbar from '../Navbar';
+import GithubSection from "../Github";
+
+
 
 
 const Header = () => {
     return (
-        <div className="Header container-sm">
+        <header className="Header container-sm">
+            <GithubSection />
             <Navbar />
-        </div>
+        </header>
     )
 }
 

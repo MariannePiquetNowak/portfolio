@@ -1,3 +1,18 @@
-.me-auto {
-    color: white !important;
+.navbar-nav {
+    width: 100%;
+    a {
+        color: white !important;
+
+    }
+}
+
+
+.nav {
+    width: 60%
+}
+button.navbar-toggler {
+    background-color: white !important;
+    border-radius: 50px;
+    margin-left: 20px;
+    margin-top: 10px;
 }
