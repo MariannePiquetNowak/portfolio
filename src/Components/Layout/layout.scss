@@ -1,5 +1,9 @@
 .Layout {
-    background: linear-gradient(180deg, #2B6D9D 0%, rgba(115, 172, 214, 0.1) 100%), #1E4867;
     height: 100vh;
     padding: 0 !important;
+    position: relative;
+    display: flex;
+    // justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }

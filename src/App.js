@@ -1,6 +1,9 @@
 import './App.scss';
 import Layout from './Components/Layout/layout'
 
+import wave from './images/wave.svg';
+import Wave from './Components/Wave';
+
 // Components 
 
 // Bootstrap
@@ -10,8 +13,7 @@ const App = () => {
   return (
     <div className="App">
       <Layout>
-
-        
+      <Wave />
       </Layout>
     </div>
   );

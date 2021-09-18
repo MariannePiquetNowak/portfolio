@@ -9,7 +9,7 @@ const GithubSection = () => {
             <Row style={{width: "10rem"}} className="git-row mt-3 position-absolute">
                 <Col xs={8} sm={8} lg={8} className="git-infos">
                 <div className="git-title">Marianne PN</div>
-                <a href="https://github.com/MariannePiquetNowak" target="_blank" className="git-link">Github</a>
+                <a href="https://github.com/MariannePiquetNowak" target="_blank" rel="noreferrer" className="git-link">Github</a>
                 </Col>
                 
                 <Col xs={4} sm={4} lg={4} className="git-img">

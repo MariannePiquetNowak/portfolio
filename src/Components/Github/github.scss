@@ -3,12 +3,16 @@
 }
 
 .Github-section {
-    position: relative;
+    position: fixed;
+    top: 0;
+    right: 0;
     width: 60%;
 }
 
 .git-row  {
     z-index: 1031; 
+    top: 0;
+    right: 40px;
 
 }
 
