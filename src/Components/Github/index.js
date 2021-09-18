@@ -6,7 +6,7 @@ import avatar from '../../images/github-avatar.jpg';
 const GithubSection = () => {
     return (
         <Container className="d-flex justify-content-end Github-section">
-            <Row style={{width: "10rem"}} className="mt-3">
+            <Row style={{width: "10rem"}} className="git-row mt-3 position-absolute">
                 <Col xs={8} sm={8} lg={8} className="git-infos">
                 <div className="git-title">Marianne PN</div>
                 <a href="https://github.com/MariannePiquetNowak" className="git-link">Github</a>

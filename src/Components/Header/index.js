@@ -8,8 +8,8 @@ import GithubSection from "../Github";
 const Header = () => {
     return (
         <header className="Header container-sm">
-            <GithubSection />
             <Navbar />
+            <GithubSection />
         </header>
     )
 }
