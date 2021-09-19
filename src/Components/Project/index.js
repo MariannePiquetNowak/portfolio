@@ -22,7 +22,7 @@ let slides = [
     
 ];
 
-const Project = () => {
+const Project = (props) => {
     return (
         <Container className="Project text-center">
             <div className="header-project mb-5">
@@ -31,7 +31,7 @@ const Project = () => {
             </div>
             
             <Carousel slides={slides} autoplay={false} />
-            <Button className="button-project mb-3" variant="outline-primary">Voir tous les projets</Button>
+            <Button onClick={props.projectPage} className="button-project mb-3" variant="outline-primary">Voir tous les projets</Button>
         </Container>
     )
 }

@@ -68,3 +68,18 @@
         }
     }
 }
+
+// slider border
+.slider-right > div{
+    border: none !important;
+    i {
+        font-size: 25px;
+    }
+}
+
+.slider-left > div{
+    border: none !important;
+    i {
+        font-size: 25px;
+    }
+}

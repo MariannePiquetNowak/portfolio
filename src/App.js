@@ -7,12 +7,18 @@ import Project from './Components/Project';
 
 // Bootstrap
 
-const App = () => {
+
+
+const goProjectPage = () => {
+    console.log('go to the project page');
+}
+
+const App = (props) => {
   return (
     <div className="App">
       <Layout>
       <Wave />
-      <Project />
+      <Project projectPage={goProjectPage}/>
       </Layout>
     </div>
   );
