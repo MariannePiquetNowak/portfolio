@@ -17,10 +17,10 @@ const NavbarPerso = () => {
                             <Scrollchor to="#Project" animate={{offset: -200, duration: 1500, easing: easeOutBack}}>Mes Projets</Scrollchor>
                             </Nav.Link>
                         <Nav.Link className="nav-item">
-                            <Scrollchor to="#About" animate={{offset: 50, duration: 1500, easing: easeOutBack}}>A propos</Scrollchor>
+                            <Scrollchor to="#About" animate={{offset: -200, duration: 1500, easing: easeOutBack}}>A propos</Scrollchor>
                         </Nav.Link>
                         <Nav.Link className="nav-item" href="#contact">
-                            <Scrollchor to="#Contact" animate={{offset: 50, duration: 1500, easing: easeOutBack}}>Contact</Scrollchor>
+                            <Scrollchor to="#Contact" animate={{offset: -200, duration: 1500, easing: easeOutBack}}>Contact</Scrollchor>
                         </Nav.Link> 
                     </Nav>
                 </Navbar.Collapse>

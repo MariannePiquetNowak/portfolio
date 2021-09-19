@@ -1,0 +1,29 @@
+.form {
+    width: 80%;
+
+    // Button
+    .btn {
+        width: 100%;
+
+        .button-form {
+            width: 200px;
+            border-color: #27D7B7;
+            color: #27D7B7;
+            border-radius: 50px;
+            font-size: 16px;    
+        }
+    
+        .button-form:hover {
+            background-color: #27D7B7;
+            color: rgba(43, 109, 157, 1);
+        }
+    }
+
+    
+}
+
+@media screen and (min-width: 770px) {
+    .form {
+        width: 500px !important;
+    }
+}

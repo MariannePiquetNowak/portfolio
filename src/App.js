@@ -6,9 +6,7 @@ import Wave from './Components/Wave';
 import ProjectSection from './Components/Project';
 import AboutSection from './Components/About';
 import ContactSection from './Components/Contact';
-
-// Bootstrap
-
+import FormContact from './Components/FormContact';
 
 
 const goProjectPage = () => {
@@ -27,6 +25,7 @@ const App = (props) => {
       <ProjectSection projectPage={goProjectPage}/>
       <AboutSection open={openCv} />
       <ContactSection />
+      <FormContact />
       </Layout>
     </div>
   );
