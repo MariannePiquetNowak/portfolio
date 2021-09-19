@@ -1,0 +1,70 @@
+.Project {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 0 0 0;
+    
+    h1 {
+        font-size: 22px;
+    }
+    h3 {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .react-3d-carousel {
+        height: 150px !important;
+        width: 100%;
+    }
+
+    .button-project {
+        width: 200px;
+        border-color: #27D7B7;
+        color: #27D7B7;
+        border-radius: 50px;
+    
+    }
+
+    .button-project:hover {
+        background-color: #27D7B7;
+    }
+}
+
+@media screen and (min-width: 770px) {
+    .Project { 
+        padding: 3em 0;   
+        h1 {
+            font-size: 25px;
+        }
+        h3 {
+            font-size: 18px;
+            font-weight: 300;
+        }
+
+        .react-3d-carousel {
+            height: 250px !important;
+        }
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .Project {  
+        height: 500px;  
+        padding: 0 !important;
+        margin-bottom: 3em;
+        h1 {
+            font-size: 30px;
+        }
+        h3 {
+            font-size: 22px;
+            font-weight: 300;
+        }
+
+        .react-3d-carousel {
+            height: 500px !important;
+            margin-bottom: 1em;
+        }
+    }
+}
