@@ -1,19 +1,18 @@
 import './App.scss';
 import Layout from './Components/Layout/layout'
 
-import wave from './images/wave.svg';
-import Wave from './Components/Wave';
-
 // Components 
+import Wave from './Components/Wave';
+import Project from './Components/Project';
 
 // Bootstrap
-import { Button } from 'react-bootstrap';
 
 const App = () => {
   return (
     <div className="App">
       <Layout>
       <Wave />
+      <Project />
       </Layout>
     </div>
   );

@@ -24,9 +24,3 @@ const NavbarPerso = () => {
 
 export default NavbarPerso; 
 
-const nav = document.getElementById('basic-navbar-nav');
-const buttonNav = document.getElementsByClassName('navbar-toggler');
-
-if (buttonNav.click) {
-    console.log("ok")
-}
