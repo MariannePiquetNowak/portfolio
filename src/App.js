@@ -3,7 +3,9 @@ import Layout from './Components/Layout/layout'
 
 // Components 
 import Wave from './Components/Wave';
-import Project from './Components/Project';
+import ProjectSection from './Components/Project';
+import AboutSection from './Components/About';
+import ContactSection from './Components/Contact';
 
 // Bootstrap
 
@@ -13,12 +15,18 @@ const goProjectPage = () => {
     console.log('go to the project page');
 }
 
+const openCv = () => {
+  console.log('open the CV');
+}
+
 const App = (props) => {
   return (
     <div className="App">
       <Layout>
       <Wave />
-      <Project projectPage={goProjectPage}/>
+      <ProjectSection projectPage={goProjectPage}/>
+      <AboutSection open={openCv} />
+      <ContactSection />
       </Layout>
     </div>
   );

@@ -29,6 +29,7 @@
 
     .button-project:hover {
         background-color: #27D7B7;
+        color: rgba(43, 109, 157, 1)
     }
 }
 
@@ -53,6 +54,7 @@
     .Project {  
         height: 500px;  
         padding: 0 !important;
+        margin-top: 5em;
         margin-bottom: 3em;
         h1 {
             font-size: 30px;

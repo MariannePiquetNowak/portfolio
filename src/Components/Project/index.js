@@ -22,9 +22,9 @@ let slides = [
     
 ];
 
-const Project = (props) => {
+const ProjectSection = (props) => {
     return (
-        <Container className="Project text-center">
+        <Container className="Project text-center" id="Project">
             <div className="header-project mb-5">
                 <h1>Mes Projets</h1>
                 <h3>Voici les différents projets sur lesquels j'ai été amené à travailler</h3>
@@ -36,7 +36,7 @@ const Project = (props) => {
     )
 }
 
-export default Project;
+export default ProjectSection;
 
 // Version mobile : Retirer le slider et remplacer par une image simple ? 
 // Ajouter images de projet dans le slider
