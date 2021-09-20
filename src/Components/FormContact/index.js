@@ -5,7 +5,7 @@ import './form.scss';
 const FormContact = () => {
     return (
         <Form className="form">
-            <h4 className="text-center mb-4" style={{color: "white"}}>Ou en remplissant le formulaire suivant</h4>
+            <h4 className="text-center mb-4" style={{color: "white"}}>Sinon, remplissez le formulaire suivant</h4>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                 <Form.Label>Votre Nom</Form.Label>
                 <Form.Control type="input" placeholder="Mr Smith" />

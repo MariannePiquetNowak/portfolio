@@ -2,7 +2,6 @@ import './App.scss';
 import Layout from './Components/Layout/layout'
 
 // Components 
-import Wave from './Components/Wave';
 import ProjectSection from './Components/Project';
 import AboutSection from './Components/About';
 import ContactSection from './Components/Contact';
