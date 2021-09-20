@@ -7,6 +7,8 @@ import ProjectSection from './Components/Project';
 import AboutSection from './Components/About';
 import ContactSection from './Components/Contact';
 import FormContact from './Components/FormContact';
+import Wallpaper from './Components/Wallpaper';
+
 
 
 const goProjectPage = () => {
@@ -21,7 +23,8 @@ const App = (props) => {
   return (
     <div className="App">
       <Layout>
-      <Wave />
+      {/* <Wave /> */}
+      <Wallpaper/>
       <ProjectSection projectPage={goProjectPage}/>
       <AboutSection open={openCv} />
       <ContactSection />
