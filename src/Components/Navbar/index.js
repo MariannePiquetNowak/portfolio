@@ -1,6 +1,6 @@
 import React from 'react';
 import { Nav, Navbar, Container } from 'react-bootstrap';
-import { easeOutQuad, Scrollchor } from 'react-scrollchor';
+import { Scrollchor } from 'react-scrollchor';
 
 
 import './navbar.scss';
@@ -33,6 +33,6 @@ const NavbarPerso = () => {
 export default NavbarPerso; 
 
 const easeOutBack = (x, t, b, c, d, s) => {
-    if (s == undefined) s = 1.70158;
+    if (s === undefined) s = 1.70158;
     return c*((t=t/d-1)*t*((s+1)*t + s) + 1) + b;
 }

@@ -1,12 +1,11 @@
 import React from 'react';
 import './contact.scss';
 
-import { Container, Row, Col, Button, Image } from 'react-bootstrap';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 import { 
     FaEnvelope,
     FaLinkedinIn,
     FaDeviantart,
-    FaBeer
 } from 'react-icons/fa';
 
 import { AiFillPhone, AiOutlineInstagram, } from 'react-icons/ai';
