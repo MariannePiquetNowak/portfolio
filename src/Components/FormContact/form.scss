@@ -29,3 +29,33 @@
     }
 }
 
+label {
+    color: white;
+}
+
+.form-message {
+    display: none;
+}
+
+.success-mess {
+    margin-top: 1em;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background-color: #26B599;
+    height: 100px; 
+    border-radius: 10px;
+
+    p {
+        margin: 0;
+        font-size: 17px;
+        color: white;
+    }
+
+    svg {
+        font-size: 50px;
+        margin: 20px;
+        color: white;
+    }
+}
+

@@ -9,6 +9,8 @@ import ContactSection from './Components/Contact';
 import FormContact from './Components/FormContact';
 import Wallpaper from './Components/Wallpaper';
 
+import { Modal } from 'react-bootstrap';
+import { render } from '@testing-library/react';
 
 const goProjectPage = () => {
     console.log('go to the project page');
@@ -25,47 +27,92 @@ const App = (props) => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   
-  /* Vérification email */
-  const isEmail = () => {
-    let regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,4}$/;
+  /* Vérification form */
+  const checkForm = () => {
+    let regexName = /^[A-Z][A-Za-z\é\è\ê\-]+$/;
+    let regexEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,4}$/;
 
-    if(email.match(regex)) {
-      return true;
-    } else {
-      return false;
+    let mailLabel = document.getElementById("not-email");
+    let nameLabel = document.getElementById("not-name");
+    let messageLabel = document.getElementById("not-message");
+
+    let formIsValid = true; 
+
+    /* ===== Name ====== */
+
+      if(!name.match(regexName)) {
+        formIsValid = false;
+        nameLabel.innerHTML = "Nom invalide"
+        nameLabel.style.color = "#D24040"
+      } else {
+        nameLabel.innerHTML = "Votre nom" 
+        nameLabel.style.color = "#27D7B7"
     }
+  
+    /* ===== Email ====== */
+
+      if(!email.match(regexEmail)) {
+        formIsValid = false;
+        mailLabel.innerHTML = "Mail invalide"
+        mailLabel.style.color = "#D24040"
+      } else {
+        mailLabel.innerHTML = "Votre mail"
+        mailLabel.style.color = "#27D7B7"
+      }
+
+    /* ===== Email ====== */
+
+      if(!message) {
+        formIsValid = false;
+        messageLabel.innerHTML = "Votre message est vide"
+        messageLabel.style.color = "#D24040"
+      }else {
+        messageLabel.innerHTML = "Votre message"
+        messageLabel.style.color = "#27D7B7"
+      }
+    
+    return formIsValid;
   }
+
+  const successMessage = () => {
+    let formMess = document.querySelector(".form-message");
+    formMess.classList.remove('form-message');
+    formMess.classList.add('success-mess');
+
+    setTimeout(() => {
+      formMess.classList.remove('success-mess');
+      formMess.classList.add("form-message");
+    }, 3000)
+  }
+
 
   const handleSubmit = e => {
 
-    let mail = document.getElementById("not-email");
     e.preventDefault();
 
-    if(name && isEmail() && message) {
-        sendFeedback('template_yoiccom',{
-          name,
-          email, 
-          message
-        });
-        mail.innerHTML = "Votre email"
-        mail.style.color = "white";
+    if(!checkForm()) {
+        console.log("Le formulaire n'est pas remplis") 
       } else {
-        mail.innerHTML = "Votre email n'est pas valide"
-        mail.style.color = "red";
-        console.log("erreur")
+        console.log("Le formulaire est bien remplis")
+        sendFeedback('template_yoiccom',{
+        name,
+        email, 
+        message
+      });        
       }
-
     }
 
 
-  const sendFeedback = (templateId, variables) => {
+   const sendFeedback = (templateId, variables) => {
     window.emailjs
       .send("gmail", templateId, variables)
       .then((res) => {
+        successMessage();
         console.log("success !")
         setName("");
         setEmail("");
         setMessage("");
+        
       })
       .catch(
         (err) => document.querySelector('.form-message').innerHTML = "Une erreur s'est produite, veuillez réessayer")
@@ -74,7 +121,7 @@ const App = (props) => {
   // =================================== //
 
   return (
-    <div className="App">
+    <div className="App" id="App">
       <Layout>
       {/* <Wave /> */}
       <Wallpaper/>
@@ -89,6 +136,7 @@ const App = (props) => {
         setName={setName}
         setEmail={setEmail}
         setMessage={setMessage}
+        check={checkForm}
         />
       </Layout>
     </div>
@@ -96,3 +144,5 @@ const App = (props) => {
 }
 
 export default App;
+
+
