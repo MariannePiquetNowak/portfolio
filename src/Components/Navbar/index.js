@@ -2,7 +2,6 @@ import React from 'react';
 import { Nav, Navbar, Container } from 'react-bootstrap';
 import { Scrollchor } from 'react-scrollchor';
 
-
 import './navbar.scss';
 
 

@@ -132,16 +132,18 @@ const App = (props) => {
           <p>Message envoyé ! Je vous recontacte dès que possible.</p>
       </div>
       <Wallpaper/>
+      <div className="type">
+        <h3>Je suis</h3>
         <Typewriter 
-        className="typewriter" 
-        options={{
-          strings: [welcome],
-          autoStart: true,
-          loop: true,
-        }}
-      />
-
-      
+          className="typewriter" 
+          options={{
+            strings: ["Dévelopeuse Front-End.", "Graphiste."],
+            autoStart: true,
+            loop: true,
+          }}
+        />
+      </div>
+       
       <ProjectSection projectPage={goProjectPage}/>
       <AboutSection open={openCv} />
       <ContactSection />

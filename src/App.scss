@@ -48,8 +48,31 @@
 }
 
 
+.type {
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  .Typewriter {
+    display: flex;
+    color: #27D7B7;
+    font-weight: 700;
+    padding: 0 10px;
+  }
 
-.Typewriter {
-  font-size: 30px;
-  color: white;
+  h3 {
+    margin-bottom: 0 !important;
+    font-size: 40px;
+    color: white
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .type {
+    font-size: 20px;
+    h3 {
+      font-size: 20px;
+    }
+  }
 }

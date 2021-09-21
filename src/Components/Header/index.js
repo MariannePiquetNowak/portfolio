@@ -10,7 +10,6 @@ const Header = () => {
         <header className="Header container-sm">
             <Navbar />
             <GithubSection />
-            
         </header>
     )
 }
