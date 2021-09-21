@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import ReactDOMServer from 'react-dom/server';
+import Typewriter from "typewriter-effect";
 import './App.scss';
 import Layout from './Components/Layout/layout'
 
@@ -19,6 +21,8 @@ const openCv = () => {
   console.log('open the CV');
 }
 
+
+/* ======== APP ========*/
 const App = (props) => {
 
  // ======= emailjs ======= //
@@ -115,6 +119,9 @@ const App = (props) => {
         (err) => document.querySelector('.form-message').innerHTML = "Une erreur s'est produite, veuillez réessayer")
   }
 
+  const el = "Welcome"
+  const welcome = "< " + el + " />"
+
   // =================================== //
 
   return (
@@ -125,6 +132,16 @@ const App = (props) => {
           <p>Message envoyé ! Je vous recontacte dès que possible.</p>
       </div>
       <Wallpaper/>
+        <Typewriter 
+        className="typewriter" 
+        options={{
+          strings: [welcome],
+          autoStart: true,
+          loop: true,
+        }}
+      />
+
+      
       <ProjectSection projectPage={goProjectPage}/>
       <AboutSection open={openCv} />
       <ContactSection />
@@ -141,8 +158,7 @@ const App = (props) => {
       </Layout>
     </div>
   );
+
 }
 
 export default App;
-
-
