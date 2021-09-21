@@ -2,9 +2,6 @@ import React from 'react';
 import { Form, Button } from 'react-bootstrap';
 import './form.scss'
 
-import {AiOutlineCheckCircle} from 'react-icons/ai';
-
-
 
 const FormContact = (props) => {
 
@@ -42,10 +39,6 @@ const FormContact = (props) => {
             <div className="btn">
             <Button Button onClick={props.submit} className="button-form" variant="outline-primary">Envoyer</Button>
             </div>  
-            <div className="form-message">
-                <AiOutlineCheckCircle />
-                <p>Message envoyé ! Je vous recontacte dès que possible.</p>
-            </div>
         </Form>
     )
 }

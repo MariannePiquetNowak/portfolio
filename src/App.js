@@ -9,8 +9,7 @@ import ContactSection from './Components/Contact';
 import FormContact from './Components/FormContact';
 import Wallpaper from './Components/Wallpaper';
 
-import { Modal } from 'react-bootstrap';
-import { render } from '@testing-library/react';
+import {AiOutlineCheckCircle} from 'react-icons/ai';
 
 const goProjectPage = () => {
     console.log('go to the project page');
@@ -76,12 +75,10 @@ const App = (props) => {
 
   const successMessage = () => {
     let formMess = document.querySelector(".form-message");
-    formMess.classList.remove('form-message');
     formMess.classList.add('success-mess');
 
     setTimeout(() => {
       formMess.classList.remove('success-mess');
-      formMess.classList.add("form-message");
     }, 3000)
   }
 
@@ -123,7 +120,10 @@ const App = (props) => {
   return (
     <div className="App" id="App">
       <Layout>
-      {/* <Wave /> */}
+      <div className="form-message">
+          <AiOutlineCheckCircle />
+          <p>Message envoyé ! Je vous recontacte dès que possible.</p>
+      </div>
       <Wallpaper/>
       <ProjectSection projectPage={goProjectPage}/>
       <AboutSection open={openCv} />
