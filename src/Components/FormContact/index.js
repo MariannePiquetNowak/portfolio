@@ -37,7 +37,7 @@ const FormContact = (props) => {
                 />
             </Form.Group>
             <div className="btn">
-            <Button Button onClick={props.submit} className="button-form" variant="outline-primary">Envoyer</Button>
+            <Button onClick={props.submit} className="button-form" variant="outline-primary">Envoyer</Button>
             </div>  
         </Form>
     )

@@ -15,7 +15,7 @@ const AboutSection = ({open}) => {
                 <Col xs={6} md={4} className="about-infos d-flex flex-column align-items-center">
                     <h1>A propos</h1>
                     <p>Développeuse web issus d’une reconversion professionnelle, je suis passionnée de code et de graphisme.</p>
-                    <Button Button onClick={open} className="button-about" variant="outline-primary">Télécharger mon CV</Button>
+                    <Button onClick={open} className="button-about" variant="outline-primary">Télécharger mon CV</Button>
                 </Col>
             </Row>
         </Container>
