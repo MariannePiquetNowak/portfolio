@@ -13,15 +13,15 @@ const NavbarPerso = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav"  />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center" >
                     <Nav className="me-auto pt-3 justify-content-around nav">
-                        <Nav.Link className="nav-item">
+                        <Nav.Item className="nav-item">
                             <Scrollchor to="#Project" animate={{offset: -200, duration: 1500, easing: easeOutBack}}>Mes Projets</Scrollchor>
-                            </Nav.Link>
-                        <Nav.Link className="nav-item">
+                        </Nav.Item>
+                        <Nav.Item className="nav-item">
                             <Scrollchor to="#About" animate={{offset: -200, duration: 1500, easing: easeOutBack}}>A propos</Scrollchor>
-                        </Nav.Link>
-                        <Nav.Link className="nav-item" href="#contact">
+                        </Nav.Item>
+                        <Nav.Item className="nav-item" href="#contact">
                             <Scrollchor to="#Contact" animate={{offset: -200, duration: 1500, easing: easeOutBack}}>Contact</Scrollchor>
-                        </Nav.Link> 
+                        </Nav.Item> 
                     </Nav>
                 </Navbar.Collapse>
             </Container>
