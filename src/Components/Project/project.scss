@@ -1,127 +1,72 @@
-.Project {
-    color: white;
+.Project-list{
+    padding: 0 !important;
+
+}
+
+#row-project-list {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    // padding: 3em 0 0 0;
-    
-    
-    h1 {
-        font-size: 22px;
-    }
-    h3 {
-        font-size: 16px;
-        font-weight: 300;
-    }
+    align-items: start;
+    margin: 3em 2em 3em 2em;
+    background-color: rgba(255,255,255, 1);
+    color: #1a4564;
 
-    .react-3d-carousel {
-        height: 150px !important;
-        width: 100%;
+    box-shadow: 2px 4px 5px rgba(0,0,0,.3);
+
+    .info-project {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
-    .button-project {
-        width: 200px;
-        border-color: #27D7B7;
-        color: #27D7B7;
-        border-radius: 50px;
-        // margin-top: 6em !important;
-        position: absolute;
-        transform: translateY(22em);
-    
-    }
-
-    .button-project:hover {
-        background-color: #27D7B7;
-        color: rgba(43, 109, 157, 1)
-    }
-}
-
-@media screen and (min-width: 770px) {
-    .Project { 
-        padding: 3em 0;  
-        margin-bottom: 7em !important;
-
-        h1 {
-            font-size: 25px;
-        }
-        h3 {
-            font-size: 18px;
-            font-weight: 300;
-        }
-
-        .react-3d-carousel {
-            height: 250px !important;
+    .info {
+        margin-bottom: 1em;
+        
+        p {
+            font-size: 15px;
         }
     }
-}
 
-@media screen and (min-width: 990px) {
-    .Project {  
-        height: 500px;  
+    .img-project{
         padding: 0 !important;
-        margin-top: 5em;
-        margin-bottom: 3em;
-        h1 {
-            font-size: 30px;
+        background-color: #27D7B7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    // Button
+    .btn-project {
+        text-align: center;
+        margin-bottom: 1em; 
+        display: flex;
+        justify-content: center;
+
+        a {
+            padding: .2em;
+            border: 2px solid #27D7B7;
+            width: 200px;
+            border-radius: 50px;
+            font-size: 16px;   
+            text-decoration: none;
+            color: #27D7B7;
         }
-        h3 {
-            font-size: 22px;
-            font-weight: 300;
-        }
 
-        .react-3d-carousel {
-            height: 500px !important;
-            margin-bottom: 1em;
+        a:hover {
+            color: #1a4564;
+            background-color: #27D7B7;
+
         }
     }
+
 }
 
-// slider border
-.slider-right > div{
-    border: none !important;
-    i {
-        font-size: 25px;
-    }
+@media screen and (min-width: 1000px) {
+    .btn-project {justify-content: flex-start !important;}
+    
 }
 
-.slider-left > div{
-    border: none !important;
-    i {
-        font-size: 25px;
-    }
-}
-
-// Slider
-
-.slider-content {
-    width: 100% !important;
-}
-
-.slider-single-content {
-    box-shadow: none !important;
-    a {
-        color: white;
-    }
-
-    a:hover {
-        color: #27D7B7;
-    }
-    a > img {
-        width: 300px;
-        height: 300px;
-    }
-}
-
-@media screen and (max-width: 770px ) {
-    .react-3d-carousel {
-        display: none;
-    }
-
-    .button-project {
-        height: 100px;
-        margin: 3em !important;
-        // position: static;
-        transform: translateY(7em) !important;
-    }
+@media screen and (min-width: 1200px) {
+    .info > p {font-size: 18px !important;}
 }

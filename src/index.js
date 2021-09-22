@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import './index.scss';
 import App from './App';
+import Projects from './Projects'
 import reportWebVitals from './reportWebVitals';
 
 import 'bootstrap/dist/css/bootstrap.css';
@@ -9,7 +11,16 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Switch>
+      <Route path="/projects">
+          <Projects />
+        </Route>
+        <Route path="/">
+          <App />
+        </Route>
+      </Switch>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

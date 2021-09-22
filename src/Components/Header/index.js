@@ -5,7 +5,7 @@ import GithubSection from "../Github";
 import './header.scss';
 
 
-const Header = () => {
+const Header = (props) => {
     return (
         <header className="Header container-sm">
             <Navbar />

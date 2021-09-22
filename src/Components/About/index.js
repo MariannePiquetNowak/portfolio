@@ -9,7 +9,6 @@ import pdf from "../../pdf/cv.pdf";
 const AboutSection = ({open}) => {
 
     const openCv = () => {
-        // var location = this.location.href = pdf;
         window.open(pdf)
     }
 

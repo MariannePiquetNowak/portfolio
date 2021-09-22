@@ -1,14 +1,18 @@
 import React, { useState } from 'react';
 import Typewriter from "typewriter-effect";
 import './App.scss';
-import Layout from './Components/Layout/layout'
+
 
 // Components 
-import ProjectSection from './Components/Project';
+import Layout from './Components/Layout/layout'
+import ProjectSection from './Components/ProjectHome';
 import AboutSection from './Components/About';
 import ContactSection from './Components/Contact';
 import FormContact from './Components/FormContact';
 import Wallpaper from './Components/Wallpaper';
+// images
+import wallpaper from "./images/header-fusion.svg";
+
 
 import {AiOutlineCheckCircle} from 'react-icons/ai';
 
@@ -127,7 +131,7 @@ const App = (props) => {
           <AiOutlineCheckCircle />
           <p>Message envoyé ! Je vous recontacte dès que possible.</p>
       </div>
-      <Wallpaper/>
+      <Wallpaper src={wallpaper}/>
       <div className="type">
         <h3>Je suis</h3>
         <Typewriter 

@@ -7,10 +7,10 @@ import './navbar.scss';
 
 const NavbarPerso = () => {
     return (
-        <Navbar expand="lg" fixed="top" >
+        <Navbar expand="lg" fixed="top">
             <Container>            
                 <Navbar.Toggle aria-controls="basic-navbar-nav"  />
-                <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center" >
+                <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
                     <Nav className="me-auto pt-3 justify-content-around nav">
                         <Nav.Item className="nav-item">
                             <Scrollchor to="#Project" animate={{offset: -200, duration: 1500, easing: easeOutBack}}>Mes Projets</Scrollchor>

@@ -5,7 +5,7 @@ import Header from '../Header';
 import Footer from '../Footer';
 
 
-const Layout = ({children}) => {
+const Layout = ({children}, props) => {
     return (
         <div className="Layout container-fluid">
             <Header />
