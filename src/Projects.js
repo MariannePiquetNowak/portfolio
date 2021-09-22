@@ -5,16 +5,14 @@ import Layout from './Components/Layout/layout';
 import Wallpaper from './Components/Wallpaper';
 import wallpaper from "./images/header-fusion.svg";
 import Project from "./Components/Project";
+// import NavProject from "./Components/NavbarProject";
 
 // Images 
 import test from "./images/binoculars-leak.svg";
 
 import { Container } from "react-bootstrap";
 
-
 const reverse = "flex-row-reverse";
-
-const aqlm = "https://leak.aqlm.fr/"
 
 const Projects = () => {
     return (
