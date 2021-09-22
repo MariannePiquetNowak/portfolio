@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import ReactDOMServer from 'react-dom/server';
 import Typewriter from "typewriter-effect";
 import './App.scss';
 import Layout from './Components/Layout/layout'
@@ -119,9 +118,6 @@ const App = (props) => {
         (err) => document.querySelector('.form-message').innerHTML = "Une erreur s'est produite, veuillez réessayer")
   }
 
-  const el = "Welcome"
-  const welcome = "< " + el + " />"
-
   // =================================== //
 
   return (
@@ -137,7 +133,7 @@ const App = (props) => {
         <Typewriter 
           className="typewriter" 
           options={{
-            strings: ["Dévelopeuse Front-End.", "Graphiste."],
+            strings: ["Développeuse Front-End.", "Graphiste."],
             autoStart: true,
             loop: true,
           }}
