@@ -3,8 +3,9 @@ import './project.scss';
 import { Link } from 'react-router-dom';
 
 import binocular from '../../images/binoculars-leak.svg';
-import aqlm from '../../images/aqlm-leak.png';
-import superu from '../../images/super-u.png';
+import aqlm from '../../images/aqlm-leak.svg';
+import superu from '../../images/super-u.svg';
+import greenValley from '../../images/green-valley.svg';
 
 import { Container, Button } from 'react-bootstrap';
 
@@ -23,8 +24,8 @@ let slides = [
         <img  src={superu} alt="3" />
         <h6 className="p-1">Print Super U</h6>
     </a>,
-    <a href="https://www.deviantart.com/sckyzo-pat/gallery/79343165/super-u-print" target="_blank" rel="noreferrer">
-        <img  src="https://picsum.photos/800/303/?random" alt="4" /> 
+    <a href="https://www.facebook.com/people/Green-Valley-Disc-Golf/100067576636965/" target="_blank" rel="noreferrer">
+        <img  src={greenValley} alt="4" /> 
         <h6 className="p-1">Print Super U</h6>
     </a>,
     
