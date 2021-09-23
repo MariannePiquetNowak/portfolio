@@ -1,5 +1,7 @@
 import React from 'react';
 import './project.scss';
+import { Link } from 'react-router-dom';
+
 import binocular from '../../images/binoculars-leak.svg';
 import aqlm from '../../images/aqlm-leak.png';
 import superu from '../../images/super-u.png';
@@ -38,7 +40,7 @@ const ProjectSection = (props) => {
             </div>
             
             <Carousel slides={slides} autoplay={false} />
-            <Button onClick={props.projectPage} className="button-project mb-3" variant="outline-primary">Voir tous les projets</Button>
+            <Link to="/projects" className="button-project mb-3" variant="outline-primary">Voir tous les projets</Link>
         </Container>
     )
 }

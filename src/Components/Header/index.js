@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Route } from "react-router-dom";
 
-import Navbar from '../Navbar';
+import NavbarHome from '../NavbarHome';
 import GithubSection from "../Github";
 import NavProject from "../NavbarProject";
 
@@ -28,7 +28,7 @@ const SwitchNav = () => {
     const url = window.location;
 
     if(url.pathname === "/") {
-        return <Navbar />
+        return <NavbarHome />
         // console.log('home')
     } 
     if(url.pathname === "/projects") {

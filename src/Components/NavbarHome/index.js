@@ -5,7 +5,7 @@ import { Scrollchor } from 'react-scrollchor';
 import './navbar.scss';
 
 
-const NavbarPerso = () => {
+const NavbarHome = () => {
     return (
         <Navbar expand="lg" fixed="top">
             <Container>            
@@ -29,7 +29,7 @@ const NavbarPerso = () => {
     )
 }
 
-export default NavbarPerso; 
+export default NavbarHome; 
 
 const easeOutBack = (x, t, b, c, d, s) => {
     if (s === undefined) s = 1.70158;

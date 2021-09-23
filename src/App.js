@@ -16,14 +16,6 @@ import wallpaper from "./images/header-fusion.svg";
 
 import {AiOutlineCheckCircle} from 'react-icons/ai';
 
-const goProjectPage = () => {
-    console.log('go to the project page');
-}
-
-const openCv = () => {
-  console.log('open the CV');
-}
-
 
 /* ======== APP ========*/
 const App = (props) => {
@@ -144,8 +136,8 @@ const App = (props) => {
         />
       </div>
        
-      <ProjectSection projectPage={goProjectPage}/>
-      <AboutSection open={openCv} />
+      <ProjectSection />
+      <AboutSection />
       <ContactSection />
       <FormContact 
         submit={handleSubmit} 

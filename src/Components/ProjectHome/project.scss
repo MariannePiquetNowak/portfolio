@@ -21,8 +21,12 @@
     }
 
     .button-project {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 200px;
-        border-color: #27D7B7;
+        border: 1px solid #27D7B7;
+        padding: .5em;
         color: #27D7B7;
         border-radius: 50px;
         // margin-top: 6em !important;
@@ -33,7 +37,8 @@
 
     .button-project:hover {
         background-color: #27D7B7;
-        color: rgba(43, 109, 157, 1)
+        color: rgba(43, 109, 157, 1);
+        text-decoration: none;
     }
 }
 
@@ -41,6 +46,10 @@
     .Project { 
         padding: 3em 0;  
         margin-bottom: 7em !important;
+
+        .button-project {
+            width: 250px;
+        }
 
         h1 {
             font-size: 25px;
