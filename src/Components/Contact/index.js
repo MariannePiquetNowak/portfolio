@@ -14,7 +14,7 @@ import contact from '../../images/contact.svg';
 
 const ContactSection = () => {
     return (
-        <Container className="Contact mt-5 mb-5">
+        <Container className="Contact mt-4 mb-5">
         <Row className="row-contact" id="Contact">
             <Col xs={10} md={4} className="contact-infos d-flex flex-column align-items-center">
                 <h1>Me Contacter</h1>
