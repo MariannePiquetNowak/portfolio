@@ -8,9 +8,7 @@ import logo from '../../images/logo.svg';
 import './navbar.scss';
 
 const NavProject = (props) => {
-    const url = window.location.host
-    const home = url 
-    
+
     return(
          <Navbar expand="lg" fixed="top" className="pt-3 pb-3">
             <Container className="nav-container-project">            

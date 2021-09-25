@@ -7,7 +7,7 @@ import aqlm from '../../images/aqlm-leak.svg';
 import superu from '../../images/super-u.svg';
 import greenValley from '../../images/green-valley.svg';
 
-import { Container, Button } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 
 import { Carousel } from '3d-react-carousal';
 
