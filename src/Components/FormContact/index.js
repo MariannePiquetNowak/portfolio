@@ -9,7 +9,7 @@ const FormContact = (props) => {
         <Form className="form">
             <h4 className="text-center mb-4" style={{color: "white"}}>Sinon, remplissez le formulaire suivant</h4>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                <Form.Label id="not-name">Votre Nom</Form.Label>
+                <Form.Label id="not-name">Votre Prénom</Form.Label>
                 <Form.Control 
                     type="input" 
                     as="input"

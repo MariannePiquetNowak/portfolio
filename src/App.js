@@ -40,7 +40,7 @@ const App = (props) => {
 
       if(!name.match(regexName)) {
         formIsValid = false;
-        nameLabel.innerHTML = "Nom invalide"
+        nameLabel.innerHTML = "Prénom invalide"
         nameLabel.style.color = "#D24040"
       } else {
         nameLabel.innerHTML = "Votre nom" 
