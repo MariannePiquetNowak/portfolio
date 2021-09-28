@@ -12,7 +12,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
+    <Router forceRefresh={true}>
       <Switch>
       <Route exact path="/">
           <App />

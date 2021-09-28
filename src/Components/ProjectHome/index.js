@@ -26,7 +26,7 @@ let slides = [
     </a>,
     <a href="https://www.facebook.com/people/Green-Valley-Disc-Golf/100067576636965/" target="_blank" rel="noreferrer">
         <img  src={greenValley} alt="4" /> 
-        <h6 className="p-1">Print Super U</h6>
+        <h6 className="p-1">Visuels Green Valley</h6>
     </a>,
     
     
