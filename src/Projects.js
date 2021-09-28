@@ -5,7 +5,8 @@ import Layout from './Components/Layout/layout';
 import Wallpaper from './Components/Wallpaper';
 import wallpaper from "./images/header-fusion.svg";
 import Project from "./Components/Project";
-// import NavProject from "./Components/NavbarProject";
+import ScrollButton from './Components/ScrollTop';
+
 
 // Images 
 import binocular from './images/binoculars-leak.svg';
@@ -71,6 +72,7 @@ const Projects = () => {
                     />
                 </Container>
             </Layout>
+            <ScrollButton />
         </div>
     )
 }

@@ -1,0 +1,24 @@
+.scroll-top  {
+    padding: 0 !important;
+    width: 70px !important;
+    height: 70px !important;
+    position: fixed; 
+    // left: 50%;
+    bottom: 40px;
+    font-size: 3rem !important;
+    z-index: 1;
+    cursor: pointer;
+    background-color: transparent !important;
+    border: none !important;
+
+    .scroll-top-icon {
+        color: green;
+
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .scroll-top {
+        display: none !important;
+    }
+}

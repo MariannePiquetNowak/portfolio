@@ -10,6 +10,7 @@ import AboutSection from './Components/About';
 import ContactSection from './Components/Contact';
 import FormContact from './Components/FormContact';
 import Wallpaper from './Components/Wallpaper';
+import ScrollButton from './Components/ScrollTop';
 // images
 import wallpaper from "./images/header-fusion.svg";
 
@@ -135,7 +136,6 @@ const App = (props) => {
           }}
         />
       </div>
-       
       <ProjectSection />
       <AboutSection />
       <ContactSection />
@@ -150,6 +150,7 @@ const App = (props) => {
         check={checkForm}
         />
       </Layout>
+      <ScrollButton />
     </div>
   );
 
