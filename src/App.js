@@ -11,6 +11,7 @@ import ContactSection from './Components/Contact';
 import FormContact from './Components/FormContact';
 import Wallpaper from './Components/Wallpaper';
 import ScrollButton from './Components/ScrollTop';
+import Opening from './Components/Opening'
 // images
 import wallpaper from "./images/header-fusion.svg";
 
@@ -115,27 +116,29 @@ const App = (props) => {
         (err) => document.querySelector('.form-message').innerHTML = "Une erreur s'est produite, veuillez réessayer")
   }
 
-  // =================================== //
+  // =================================== //     
 
   return (
     <div className="App" id="App">
+           <Opening />
+
       <Layout>
-      <div className="form-message">
-          <AiOutlineCheckCircle />
-          <p>Message envoyé ! Je vous recontacte dès que possible.</p>
-      </div>
+        <div className="form-message">
+            <AiOutlineCheckCircle />
+            <p>Message envoyé ! Je vous recontacte dès que possible.</p>
+        </div>
       <Wallpaper src={wallpaper}/>
-      <div className="type">
-        <h3>Je suis</h3>
-        <Typewriter 
-          className="typewriter" 
-          options={{
-            strings: ["Développeuse Front-End.", "Graphiste."],
-            autoStart: true,
-            loop: true,
-          }}
-        />
-      </div>
+        <div className="type">
+          <h3>Je suis</h3>
+          <Typewriter 
+            className="typewriter" 
+            options={{
+              strings: ["Développeuse Front-End.", "Graphiste."],
+              autoStart: true,
+              loop: true,
+            }}
+          />
+        </div>
       <ProjectSection />
       <AboutSection />
       <ContactSection />

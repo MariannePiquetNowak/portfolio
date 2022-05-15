@@ -1,0 +1,80 @@
+body {
+    overflow: visible;
+}
+.opening {
+    position: absolute; 
+    // top: 0; 
+    // left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1502;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .opening .container-left {
+    background-color: #2F394D;
+    width: 50%;
+    position: absolute; 
+    z-index: 1500;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    transition: width 1s; 
+    
+  }
+  
+  .opening .container-right {
+    background-color: #2F394D;
+    width: 50%;
+    position: absolute; 
+    z-index: 1500;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    transition: width 1s; 
+  }
+  
+  .opening .circle {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: #468C98;
+    border: 10px solid #40ed7a;
+    position: absolute;
+    z-index: 1501;
+
+    transition: all .5s; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 90%;
+  
+        animation-name: logo-rotate;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out
+    }
+  }
+  
+  .opening .slide-left {
+    width: 0; 
+  }
+  
+  .opening .slide-right {
+    width: 0; 
+  }
+  
+  /* Rotate */
+@keyframes logo-rotate {
+    from { 
+      transform: rotate(-360deg); 
+     }
+       to { 
+         transform: rotate(360deg); 
+     }
+   }
+  
