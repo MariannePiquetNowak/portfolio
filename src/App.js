@@ -17,6 +17,7 @@ import wallpaper from "./images/header-fusion.svg";
 
 
 import {AiOutlineCheckCircle} from 'react-icons/ai';
+// import { ModalBody } from 'react-bootstrap';
 
 
 /* ======== APP ========*/
@@ -83,7 +84,6 @@ const App = (props) => {
     }, 3000)
   }
 
-
   const handleSubmit = e => {
 
     e.preventDefault();
@@ -115,7 +115,8 @@ const App = (props) => {
       .catch(
         (err) => document.querySelector('.form-message').innerHTML = "Une erreur s'est produite, veuillez réessayer")
   }
-
+  
+ 
   // =================================== //     
 
   return (

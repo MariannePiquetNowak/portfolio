@@ -1,18 +1,18 @@
-import React, {useState} from "react";
+import React from "react";
 import "./open.scss";
-import { useCookies, Cookies } from 'react-cookie';
+// import { useCookies } from 'react-cookie';
+import logo from "../../images/logo.svg";
 
 const Opening = (props) => {
 
-    const [cookies, setCookie] = useCookies(['name']);
-   
-    const overflowHidden = () => {
-        const body = document.body;
-        body.style.overflow = 'hidden';
-    }
-    overflowHidden()
+    // const [cookies, setCookie] = useCookies(['name']);
 
-    const openTime = () => {
+   const overflowVisible = () => {
+    const body = document.body;
+    body.style.overflow = 'visible';
+}
+
+    const openTime = (e) => {
         setTimeout(() => {
 
             const logo = document.querySelector('.circle');
@@ -31,13 +31,9 @@ const Opening = (props) => {
         setTimeout(() => {
             const opening = document.querySelector('.opening');
             opening.style.display = "none";    
+
         }, 2000)
 
-    }
-
-    const overflowVisible = () => {
-        const body = document.body;
-        body.style.overflow = 'visible';
     }
 
     openTime()
@@ -50,7 +46,7 @@ const Opening = (props) => {
             
             <div className="container-right"></div>
             <div className="circle">
-                <img className="logo" src="https://nsa40.casimages.com/img/2021/05/11//210511122423929435.png" alt="logo" />
+                <img className="logo" src={logo} alt="logo" />
             </div>
         </div>
     )
