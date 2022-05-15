@@ -1,7 +1,9 @@
 .Project-list{
     padding: 0 !important;
 }
-
+body {
+    overflow: visible;
+}
 #row-project-list {
     display: flex;
     justify-content: center;
