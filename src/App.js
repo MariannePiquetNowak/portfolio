@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, Suspense } from 'react';
 import Typewriter from "typewriter-effect";
 import './App.scss';
 
@@ -14,14 +14,21 @@ import ScrollButton from './Components/ScrollTop';
 import Opening from './Components/Opening'
 // images
 import wallpaper from "./images/header-fusion.svg";
+import flag_fr from './images/flag_fr.png';
+import flag_uk from './images/flag_uk.png';
 
 
 import {AiOutlineCheckCircle} from 'react-icons/ai';
 // import { ModalBody } from 'react-bootstrap';
 
+import { useTranslation } from 'react-i18next'
 
 /* ======== APP ========*/
 const App = (props) => {
+
+  const {t, i18n} = useTranslation('common');
+  document.title = t('title');
+
 
  // ======= emailjs ======= //
   const [name, setName] = useState("");
@@ -43,10 +50,10 @@ const App = (props) => {
 
       if(!name.match(regexName)) {
         formIsValid = false;
-        nameLabel.innerHTML = "Prénom invalide"
+        nameLabel.innerHTML = t('messages.error_name')
         nameLabel.style.color = "#D24040"
       } else {
-        nameLabel.innerHTML = "Votre nom" 
+        nameLabel.innerHTML = t('contact.name')
         nameLabel.style.color = "#27D7B7"
     }
   
@@ -54,10 +61,10 @@ const App = (props) => {
 
       if(!email.match(regexEmail)) {
         formIsValid = false;
-        mailLabel.innerHTML = "Mail invalide"
+        mailLabel.innerHTML = t('messages.error_mail')
         mailLabel.style.color = "#D24040"
       } else {
-        mailLabel.innerHTML = "Votre mail"
+        mailLabel.innerHTML = t('contact.mail')
         mailLabel.style.color = "#27D7B7"
       }
 
@@ -65,10 +72,10 @@ const App = (props) => {
 
       if(!message) {
         formIsValid = false;
-        messageLabel.innerHTML = "Votre message est vide"
+        messageLabel.innerHTML = t('messages.error_msg')
         messageLabel.style.color = "#D24040"
       }else {
-        messageLabel.innerHTML = "Votre message"
+        messageLabel.innerHTML = t('contact.msg')
         messageLabel.style.color = "#27D7B7"
       }
     
@@ -116,46 +123,50 @@ const App = (props) => {
         (err) => document.querySelector('.form-message').innerHTML = "Une erreur s'est produite, veuillez réessayer")
   }
   
- 
   // =================================== //     
 
   return (
-    <div className="App" id="App">
-           <Opening />
-
-      <Layout>
-        <div className="form-message">
-            <AiOutlineCheckCircle />
-            <p>Message envoyé ! Je vous recontacte dès que possible.</p>
-        </div>
-      <Wallpaper src={wallpaper}/>
-        <div className="type">
-          <h3>Je suis</h3>
-          <Typewriter 
-            className="typewriter" 
-            options={{
-              strings: ["Développeuse Front-End.", "Graphiste."],
-              autoStart: true,
-              loop: true,
-            }}
+    <Suspense fallback="loading">
+      <div className="App" id="App">
+        <Opening />
+        <Layout>
+          <div className="form-message">
+              <AiOutlineCheckCircle />
+              <p>{t('messages.msg_send')}</p>
+          </div>
+        <Wallpaper src={wallpaper}/>
+          <div className="type">
+            <h3>{t('messages.iam')}</h3>
+            <Typewriter 
+              className="typewriter" 
+              options={{
+                strings: [t('messages.typer_1'), t('messages.typer_2')],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </div>
+        <ProjectSection />
+        <AboutSection />
+        <ContactSection />
+        <FormContact 
+          submit={handleSubmit} 
+          name={name} 
+          email={email} 
+          message={message}
+          setName={setName}
+          setEmail={setEmail}
+          setMessage={setMessage}
+          check={checkForm}
           />
+        </Layout>
+        <ScrollButton />
+        <div className="btn-lang">
+          <button onClick={() => i18n.changeLanguage('fr')}><img src={flag_fr} alt="lang_fr"/></button>
+          <button onClick={() => i18n.changeLanguage('en')}><img src={flag_uk} alt="lang_fr"/></button>
         </div>
-      <ProjectSection />
-      <AboutSection />
-      <ContactSection />
-      <FormContact 
-        submit={handleSubmit} 
-        name={name} 
-        email={email} 
-        message={message}
-        setName={setName}
-        setEmail={setEmail}
-        setMessage={setMessage}
-        check={checkForm}
-        />
-      </Layout>
-      <ScrollButton />
-    </div>
+      </div>
+    </Suspense>
   );
 
 }

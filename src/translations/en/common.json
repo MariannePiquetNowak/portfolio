@@ -1,0 +1,68 @@
+{
+    "title": "Welcome on my Portfolio",
+    "navbar": {
+        "projects": "My Projects",
+        "about": "About",
+        "contact": "Contact Me"
+    },
+    "slide": {
+        "project_1": "Visuals AQLM 3.5",
+        "project_2": "Help-Center AQLM-Leak",
+        "project_3": "Print Super U",
+        "project_4": "Visuals Green Valley",
+        "title": "My Projects",
+        "descr": "Here are the different projects I have worked on",
+        "btn": "See all projects"
+    },
+    "about": {
+        "title": "About me",
+        "description": "I am a web developer and I am passionate about code and graphic design.",
+        "button": "Download my Resume"
+    },
+    "contact": {
+        "title": "Contact me",
+        "form": "Alternaly, fill out the following form",
+        "name": "Your firstname",
+        "mail": "Your e-mail",
+        "msg": "Your message",
+        "btn": "Send"
+    },
+    "messages": {
+        "msg_send": "Message sent! I will contact you as soon as possible.",
+        "error_name": "Invalid first name",
+        "error_mail": "Invalid email address",
+        "error_msg": "Your message is empty",
+        "iam": "I am",
+        "typer_1": "a Web Developer",
+        "typer_2": "a Graphist"
+    },
+    "project": {
+        "tech": "Technologies used",
+        "btn": "Access to the project",
+        "project_1": {
+            "title": "Visuals AQLM 3.5",
+            "text": "I was brought to realize the visuals of the site leak.aqlm.fr of the Start-Up AQLM 3.5. For this, I used the Adobe Illustrator software that I use in self-taught for 3 years. They have been created entirely vectorial",
+            "btn": "Access to the visuals"
+        },
+        "project_2": {
+            "title": "Help-Center AQLM 3.5",
+            "text": "AQLM 3.5 is a Start-Up offering SEO, web development and cybersecurity services. I had the pleasure to realize their Help-Center page of their website leak.aqlm.fr",
+            "btn": "Access to the website"
+        },
+        "project_3": {
+            "title": "Logo + Visuals Green Valley",
+            "text": "Green Valley Disc Golf is a disc golf association located in Haute-Savoie. The association contacted me to create their logo. Happy with my work, I created other visuals on their behalf. The visuals are visible on their Facebook page",
+            "btn": "Go to page"
+        },
+        "project_4": {
+            "title": "Print Super U",
+            "text": "2/3 Lab butcher, 1/3 Graphist Marketing. 6 months during which I realized some leaflets and logo in PDF format for the Super U of L'Arbresle country",
+            "btn": "Access to prints"
+        },
+        "project_5": {
+            "title": "Single Page CV",
+            "text": "A small Single Page of my Curriculum Vitae created in React.js and Redux in order to learn this one in autodidact. It is no longer updated and is not responsive",
+            "btn": "Access to the website"
+        }
+    }
+}

@@ -76,3 +76,25 @@
     }
   }
 }
+
+.btn-lang {
+  position: fixed; 
+  bottom: 5px;
+  right: 10px;
+}
+
+.btn-lang button {
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  margin: .3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-lang button img {
+  width: 30px;
+  height: 30px;
+}
+
