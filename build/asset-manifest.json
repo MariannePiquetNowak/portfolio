@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.36784f6b.css",
-    "main.js": "/static/js/main.eb7cbff6.js",
+    "main.css": "/static/css/main.165ac050.css",
+    "main.js": "/static/js/main.af4d756b.js",
     "static/js/787.b9ec5bb0.chunk.js": "/static/js/787.b9ec5bb0.chunk.js",
     "static/media/super-u.svg": "/static/media/super-u.2a1150d9504e49ba34a9a43c169e0f3e.svg",
     "static/media/cv.svg": "/static/media/cv.9592e3f5b08fc9226e4558baacbefb0c.svg",
@@ -11,16 +11,18 @@
     "static/media/avatar-web.svg": "/static/media/avatar-web.6a892f2b90d682ac98e3edd4cea414a7.svg",
     "static/media/aqlm-leak.svg": "/static/media/aqlm-leak.0dd1dc4c81f6a0dc48d5489ece7e73d4.svg",
     "static/media/binoculars-leak.svg": "/static/media/binoculars-leak.782e91fcf294a34e0e9832d875723d53.svg",
+    "static/media/flag_fr.png": "/static/media/flag_fr.218a72a94b9b590cc054.png",
+    "static/media/flag_uk.png": "/static/media/flag_uk.2fe6ea654a6be596d9d7.png",
     "static/media/github-avatar.jpg": "/static/media/github-avatar.f5380a7ae281fa8c015e.jpg",
     "index.html": "/index.html",
     "static/media/logo.svg": "/static/media/logo.e466ca0cc5222c631002fc6380216708.svg",
     "static/media/contact.svg": "/static/media/contact.ecbf84a7d7b8bc255e4593a82947843a.svg",
-    "main.36784f6b.css.map": "/static/css/main.36784f6b.css.map",
-    "main.eb7cbff6.js.map": "/static/js/main.eb7cbff6.js.map",
+    "main.165ac050.css.map": "/static/css/main.165ac050.css.map",
+    "main.af4d756b.js.map": "/static/js/main.af4d756b.js.map",
     "787.b9ec5bb0.chunk.js.map": "/static/js/787.b9ec5bb0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.36784f6b.css",
-    "static/js/main.eb7cbff6.js"
+    "static/css/main.165ac050.css",
+    "static/js/main.af4d756b.js"
   ]
 }
